@@ -239,18 +239,17 @@ background-color:var(--background-color);
     border-radius: 4px;
     gap: 50px;
     padding-inline-start: 0;
-
+    fill: var(--svg-color);
 }
 
-.list_header_tel li{
+.list_header_tel a{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap:10px;
+    gap: 10px;
 }
 
 
-.list_header_tel li:hover {
+.list_header_tel a:hover {
     fill: var(--button-color);
     color: var(--button-color);
 }
@@ -435,7 +434,7 @@ p{
     justify-content: space-around;
     padding: 0;
     list-style-type: none;
-   
+    fill: var(--svg-color);
 }
 
 .socialmedia svg{
@@ -488,6 +487,7 @@ p{
     list-style-type: none;
     justify-content: space-around;
     align-items: center;
+    fill: var(--svg-color);
 }
 .list_clients li{
     border: 1px solid #AFB1B8;
@@ -510,9 +510,7 @@ p{
     cursor: pointer;
 
 }
-svg{
-    fill: var(--svg-color);
-}
+
 .margin{
     margin-top: 94px;
     margin-bottom: 94px;
