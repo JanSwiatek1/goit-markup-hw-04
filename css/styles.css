@@ -131,7 +131,7 @@ background-color:var(--background-color);
     letter-spacing: 0.03em;
 
 }
-.link2{
+.link_tel{
     text-decoration: none;
     cursor: pointer;
     color: var(--link-clolor);
@@ -141,11 +141,9 @@ background-color:var(--background-color);
     letter-spacing: 0.02em;
 
 }
-.link2:hover {
-    color: var(--button-color);
-    fill: var(--button-color);
 
-}
+
+
 
 .footer .link{
     color: var(--link-clolor);
@@ -236,7 +234,7 @@ background-color:var(--background-color);
 .list_header_tel {
     display: flex;
     list-style-type: none;
-    justify-content: space-between;
+    justify-content: space-between;  
     align-items: baseline;
     border-radius: 4px;
     gap: 50px;
@@ -244,10 +242,18 @@ background-color:var(--background-color);
 
 }
 
-/*
-.list_header_tel svg:hover {
+.list_header_tel li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+
+
+.list_header_tel li:hover {
     fill: var(--button-color);
-}*/
+    color: var(--button-color);
+}
 
 
 .list_main{
