@@ -434,16 +434,17 @@ p{
     justify-content: space-around;
     padding: 0;
     list-style-type: none;
-    fill: var(--svg-color);
 }
 
 .socialmedia svg{
-     padding: 12px;
-}
-.socialmedia svg:hover{
-    fill: #FFFFFF;
+    padding: 12px;
 }
 
+.socialmedia a{
+    fill: var(--svg-color);
+}
+
+/*
 .socialmedia li:hover{
     border-radius: 100%;
     cursor: pointer;
@@ -451,7 +452,15 @@ p{
     fill: #FFFFFF;
     color: #fff;
     height: 44px;
-    
+}*/
+.socialmedia a:hover,
+.socialmedia a:focus{
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: var(--button-color);
+    fill: #FFFFFF;
+    color: #fff;
+    height: 44px;
 }
 
 .footer_socialmedia{
@@ -485,8 +494,9 @@ p{
 .list_clients{
     display: flex;
     list-style-type: none;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0;
     fill: var(--svg-color);
 }
 .list_clients li{
