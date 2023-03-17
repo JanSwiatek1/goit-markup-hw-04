@@ -355,7 +355,7 @@ figure{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 160px;
+    height: 120px;
 }
 
 .inf_picture p{
@@ -431,9 +431,10 @@ p{
 
 .socialmedia{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0;
     list-style-type: none;
+    
 }
 
 .socialmedia svg{
@@ -442,6 +443,11 @@ p{
 
 .socialmedia a{
     fill: var(--svg-color);
+    cursor: pointer;
+}
+
+.socialmedia li{
+    height: 1px;
 }
 
 /*
@@ -455,8 +461,8 @@ p{
 }*/
 .socialmedia a:hover,
 .socialmedia a:focus{
+    display: flex;
     border-radius: 100%;
-    cursor: pointer;
     background-color: var(--button-color);
     fill: #FFFFFF;
     color: #fff;
