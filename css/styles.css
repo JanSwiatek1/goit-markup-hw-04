@@ -13,7 +13,10 @@ body{
     color: var(--text-color);
 }
 
-
+ul{
+    padding: 0;
+    margin: 0;
+}
 
 
 .container{
@@ -156,6 +159,7 @@ background-color:var(--background-color);
     line-height: 2;
 }
 
+.link:focus,
 .link:hover {
     color: var(--button-color);
 }
@@ -190,6 +194,7 @@ background-color:var(--background-color);
     cursor: pointer;
 
 }
+.button_portfolio:focus,
 .button_portfolio:hover{
     color: #FFFFFF;
     background-color: #2196F3;
@@ -248,7 +253,7 @@ background-color:var(--background-color);
     gap: 10px;
 }
 
-
+.list_header_tel a:focus,
 .list_header_tel a:hover {
     fill: var(--button-color);
     color: var(--button-color);
@@ -387,7 +392,9 @@ figure{
     padding: 0;
     height: 428px;
 }
-.list_block figure:hover{
+
+
+.list_block figure:hover {
     background: #FFFFFF;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -434,7 +441,7 @@ p{
     justify-content: space-between;
     padding: 0;
     list-style-type: none;
-    
+    gap: 10px;
 }
 
 .socialmedia svg{
@@ -450,15 +457,6 @@ p{
     height: 1px;
 }
 
-/*
-.socialmedia li:hover{
-    border-radius: 100%;
-    cursor: pointer;
-    background-color: var(--button-color);
-    fill: #FFFFFF;
-    color: #fff;
-    height: 44px;
-}*/
 .socialmedia a:hover,
 .socialmedia a:focus{
     display: flex;
@@ -481,15 +479,21 @@ p{
     padding: 12px;
     fill: #FFFFFF;
 }
-.footer_socialmedia li {
+
+.footer_socialmedia li{
+    height: 1px;
+}
+.footer_socialmedia a {
+    display: flex;
     height: 44px;
     border-radius: 90%;
     background-color: rgba(255, 255, 255, 0.1);
 }
 
 
-
-.footer_socialmedia li:hover {
+.footer_socialmedia a:focus,
+.footer_socialmedia a:hover {
+    
     border-radius: 100%;
     cursor: pointer;
     background-color: var(--button-color);
@@ -505,7 +509,7 @@ p{
     padding: 0;
     fill: var(--svg-color);
 }
-.list_clients li{
+.list_clients a{
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     width:170px ;
@@ -515,12 +519,14 @@ p{
     align-items: center;
 }
 
-.list_clients li:hover {
+.list_clients a:focus,
+.list_clients a:hover {
     fill:var(--button-color);
     color: var(--button-color);
     cursor: pointer;
     border: 1px solid var(--button-color);
 }
+
 .list_clients svg:hover {
     fill: var(--button-color);
     cursor: pointer;
